@@ -1,0 +1,283 @@
+.index_banner{
+    position: relative;
+}
+.index_banner li{
+    position: relative;
+    height: 500px;
+    text-align: center;
+}
+.index_banner a{
+    position: absolute;
+    top:0px;
+    height: 500px;
+    width: 100%;
+    display: block;
+
+
+}
+.smallImg{
+    position: absolute;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    bottom: 15px;
+
+}
+.line{
+    display: inline-block;
+    cursor: pointer;
+    margin:0 5px;
+}
+.smallImg img{
+    display: block;
+    width: 144px;
+    border:1px solid #fff;
+}
+.smallImg .actor img{
+    border:1px solid #9b5251;
+}
+
+/*滚动条*/
+.new-notice {
+    width: 1200px;
+    margin: 0 auto;
+    height: 30px;
+    line-height: 30px;
+    background-color: #f2f2f2;
+    font-size: 13px;
+}
+.new-notice *{
+    display: inline-block;
+}
+.new-notice i{
+    padding-left: 34px;
+}
+.new-notice a{
+    margin-left:0;
+    padding:0;
+    margin-right:65px;
+    float: left;
+    color:#666;
+    cursor: pointer;
+}
+.notice-wr{
+    width:1050px;
+    overflow: hidden;
+    margin-left: 30px;
+    height:35px;
+    position: relative;
+    *display: inline;
+    *zoom:1;
+}
+.notice-poab{
+    width:3198px;
+    position: absolute;
+    top:0;
+    left:0;
+    height:35px;
+}
+.fl{
+    float: left;
+}
+/*分割线*/
+.line-title {
+    margin: 30px auto 35px;
+    height: 15px;
+    width: 1200px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    text-align: center;
+}
+.line-title span {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #666;
+    letter-spacing: 3px;
+}
+/*手风琴*/
+.accor {
+    width: 1200px;
+    height: 465px;
+    margin: 0 auto
+}
+
+.accor_item {
+    height: 100%;
+    display: inline-block;
+    width: 140px;
+    /*display: inline-block !important;*/
+    text-align: left;
+    /*height: 100%;*/
+    overflow: hidden;
+    background-size: cover !important;
+    background-position: center center;
+    position: relative;
+    text-decoration: none;
+    margin-left: -4px;
+    cursor: pointer;
+}
+
+.accor_item:nth-child(1) {
+    width: 780px;
+    background: url(../img/indexImg/accor_1.jpg) no-repeat;
+}
+
+.accor_item:nth-child(2) {
+    /*width: 780px;*/
+    background: url(../img/indexImg/accor_2.jpg) no-repeat;
+}
+
+.accor_item:nth-child(3) {
+    /*width: 780px;*/
+    background: url(../img/indexImg/accor_3.jpg) no-repeat;
+}
+
+.accor_item:nth-child(4) {
+    /*width: 780px;*/
+    background: url(../img/indexImg/accor_4.jpg) no-repeat;
+}
+
+.accor_text {
+    cursor: pointer;
+    padding-top: 20px;
+    position: absolute;
+    bottom: 0px;
+    width: 140px;
+    height: 255px;
+    background: #f9f9f9;
+    write-space: none;
+    right: 0px;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.accor_title {
+    font-size: 20px;
+    color: #2a2a2a;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.accor_content {
+    color: #666;
+    text-align: center;
+    width: auto;
+    font-size: 13px;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.accor_link {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 13px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.accor_small {
+    width: 140px;
+    height: 190px;
+    position: absolute;
+    background: white;
+    /*background: url(img/indexImg/smallaccor_1.jpg) no-repeat 0 0;*/
+    left: 0;
+    top: 0;
+}
+.recommend{
+    color:#737373;line-height:18px;margin-top:-3px;text-align: center;
+}
+
+.recommend li{
+    display: inline-block;padding:0 12px;font-size: 12px;cursor: pointer;
+    *display: inline;transition: all 100ms;
+}
+.recommend li.on{
+    color:#000;
+    font-weight: bold;
+    text-decoration: none;
+}
+.recommend_wrap {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 1200px;
+    overflow: hidden;
+}
+.recommend_inner {
+    width: 1200px;
+    position: relative;
+    overflow: hidden;
+    height: 774px;
+}
+
+.recommned_info {
+    width: 10800px;
+    /*width:auto ;*/
+    position: absolute;
+    height: 774px;
+}
+
+.recommned_info ul {
+    float: left;
+    width: 1210px;
+    height: 774px;
+}
+
+.recommned_info ul li {
+
+    float: left;
+    width: 232px;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.recommned_info ul li a {
+    width: 232px;
+    height: 312px;
+    display: block;
+}
+
+.recommned_info ul li .info_text {
+    float: left;
+    width: 232px;
+    height: 48px;
+    margin-top: 18px;
+    margin-bottom: 5px;
+}
+
+.recommned_info ul li .info_text a {
+    display: inline;
+    color: #666666;
+    width: 232px;
+    /*height: ;*/
+    text-decoration: none;
+}
+
+.recommend_li li span {
+    font-weight: bold;
+}
+
+.recommend_li li.on {
+    color: black;
+}
+
+.recommned_info ul li .info_text a:hover {
+    text-decoration: underline;
+}
+
+.recommned_info ul li .info_text .price font {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.recommned_info ul li .info_text .price span {
+    font-weight: bold;
+}
