@@ -3,7 +3,7 @@ function ajax(url,fnWin,fnFaild){
 	if(window.XMLHttpRequest){
 		xhr = new XMLHttpRequest();
 	}else{
-		xnr = new ActiveXObject("Microsoft.XMLHTTP");
+		xhr = new ActiveXObject("Microsoft.XMLHTTP");
 	}
 	xhr.open("GET",url,true);
 	xhr.send();

@@ -157,9 +157,10 @@ function recommend() {
         if (_indexNum == 7) {
             $(".recommned_info").stop().animate({
                 "left": "-" + (1210 * _indexNum) + "px"
-            }).animate({
-                "left": "0"
-            }, 0)
+            })
+            //  .animate({
+            //    "left": "0"
+            //}, 0)
             _indexNum = 0;
         } else {
             $(".recommned_info").stop().animate({
@@ -168,7 +169,7 @@ function recommend() {
         }
         $(".recommend_li li").eq(_indexNum).addClass("on").siblings().removeClass("on")
     }
-    var _strclone = ""
+    var _strclone = "";
     //clothesnew
     $.ajax({
         url: "json/goods.json",
@@ -196,7 +197,7 @@ function recommend() {
                     $.ajax({
                         url: "json/goods.json",
                         success: function(date) {
-                            var _len = date["coat"].length
+                            var _len = date.coat.length
                             var _str = "<ul class='clearfix'>"
                             for (var i = 0; i < _len; i++) {
                                 _str += "<li><a href='#'><img src='img/indexImg/coat_" + (i + 1) + ".jpg'/></a><div class='info_text'><a href='#'>" + date["coat"][i].name + "</a><div class='price'><font>￥</font><span>" + date["coat"][i].price + "</span></div></div></li>"
@@ -258,7 +259,6 @@ function recommend() {
                                                             })
                                                         }
                                                     });
-
                                                 }
                                             });
                                         }
